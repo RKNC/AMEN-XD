@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "335063854579",
+    "project_id": "a-la-huaca",
+    "storage_bucket": "a-la-huaca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:335063854579:android:d06aaddceadeb98f373686",
+        "android_client_info": {
+          "package_name": "com.example.alahuaca"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "335063854579-clm7mv77np767j2f3s8gm975babmkp7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDhTmYWNoqFwx3cd7ijBvIn9z3w_oPNoZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "335063854579-clm7mv77np767j2f3s8gm975babmkp7a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
