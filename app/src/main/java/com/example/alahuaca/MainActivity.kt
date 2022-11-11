@@ -21,14 +21,9 @@ class MainActivity : AppCompatActivity() {
         var btningresar : Button = findViewById(R.id.btnIngresar)
         val txtemail : TextView = findViewById(R.id.edtEmail)
         val password : TextView = findViewById(R.id.edtPassword)
-        val btnRegister : TextView = findViewById(R.id.btnRegister)
         firebaseAuth = Firebase.auth
         btningresar.setOnClickListener(){
             ingresar(txtemail.text.toString(),password.text.toString())
-        }
-        btnRegister.setOnClickListener(){
-            val i = Intent(this, Registrar::class.java)
-            startActivity(i)
         }
     }
     private fun ingresar(email: String, password: String){
@@ -45,5 +40,4 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-
 }
