@@ -21,12 +21,12 @@ class MainActivity : AppCompatActivity() {
         var btningresar : Button = findViewById(R.id.btnIngresar)
         val txtemail : TextView = findViewById(R.id.edtEmail)
         val password : TextView = findViewById(R.id.edtPassword)
-        val btnregistrar : Button = findViewById(R.id.btnRegistrar)
+        val btnRegister : TextView = findViewById(R.id.btnRegister)
         firebaseAuth = Firebase.auth
         btningresar.setOnClickListener(){
             ingresar(txtemail.text.toString(),password.text.toString())
         }
-        btnregistrar.setOnClickListener(){
+        btnRegister.setOnClickListener(){
             val i = Intent(this, Registrar::class.java)
             startActivity(i)
         }
