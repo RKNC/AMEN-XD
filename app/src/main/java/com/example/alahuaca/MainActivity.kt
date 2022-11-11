@@ -21,9 +21,19 @@ class MainActivity : AppCompatActivity() {
         var btningresar : Button = findViewById(R.id.btnIngresar)
         val txtemail : TextView = findViewById(R.id.edtEmail)
         val password : TextView = findViewById(R.id.edtPassword)
+        var btnCrear_Cuenta: TextView= findViewById(R.id.btnRegister)
+        var btnNew : TextView = findViewById(R.id.btnForget)
         firebaseAuth = Firebase.auth
         btningresar.setOnClickListener(){
             ingresar(txtemail.text.toString(),password.text.toString())
+        }
+        btnCrear_Cuenta.setOnClickListener(){
+            val i = Intent (this, Registrar::class.java)
+            startActivity(i)
+        }
+        btnNew.setOnClickListener(){
+            val i = Intent (this, Recuperar::class.java)
+            startActivity(i)
         }
     }
     private fun ingresar(email: String, password: String){
